@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Codec SUPERB</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="icon" href="assets/figures/face-screaming-in-fear.svg" />
+</head>
+
+<body class="homepage is-preload">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<section id="header">
+			<!-- Logo -->
+			<h1><a href="index.html">Codec SUPERB</a></h1>
+
+			<!-- Banner -->
+			<section id="banner">
+				<header>
+					<h2>Codec SUPERB Challenge @ SLT 2024</h2>
+					<p style="font-weight: 700">Codec Speech processing Universal PERformance Benchmark Challenge</p>
+					<br>
+					<ul class="actions">
+						<li><a href="#timeline" class="button">Timeline</a></li>
+						<li><a href="#committee" class="button">Committee</a></li>
+						<li><a href="#contact" class="button">Contact</a></li>
+					</ul>
+				</header>
+			</section>
+
+			<section>
+				<div class="container">
+					<!-- Content -->
+					<article class="box post">
+						<img style="margin-bottom: 20px" width=100% src="assets/figures/codec_papers.png" alt="" />
+						<header>
+							<h2>Introduction</h2>
+						</header>
+						<section style="line-height: 1.75em; font-size: 22px">
+							<p>
+								Neural audio codecs are initially introduced to compress audio data into compact codes
+								to reduce transmission latency. Researchers recently discovered the potential of codecs
+								as suitable tokenizers for converting continuous audio into discrete codes, which can be
+								employed to develop audio language models (LMs). The neural audio codec's dual roles in
+								minimizing data transmission latency and serving as tokenizers underscore its critical
+								importance. The ideal neural audio codec models should preserve content,
+								paralinguistics, speakers,
+								and audio information. However, the
+								question of which codec achieves optimal audio information preservation remains
+								unanswered, as in different papers, models are evaluated on their selected experimental
+								settings. There's a lack of a challenge to enable a fair comparison of all current
+								existing codec models and stimulate the development of more advanced codecs. To fill
+								this blank, we propose the Codec-SUPERB challenge.
+								<br><br>
+								The goal of this challenge is to encourage innovative methods and a comprehensive
+								understanding of the capability of codec models. This challenge will conduct a
+								comprehensive analysis to provide insights into codec models from both application and
+								signal perspectives, diverging from previous codec papers that predominantly focus on
+								signal-level comparisons following the paper <a href="https://arxiv.org/abs/2402.13071">
+									Codec-SUPERB: An In-Depth
+									Analysis of Sound Codec Models (Wu et al., arXiv 2024)</a>. The diverse set of
+								signal-level metrics,
+								including Perceptual Evaluation of Speech Quality (PESQ), Short-Time Objective
+								Intelligibility (STOI), STFT distance (STFTDistance), Mel distance, and F0 Pearson
+								Correlation Coefficient (F0CORR), enable us to conduct a thorough evaluation of
+								sound
+								quality across various dimensions, encompassing spectral fidelity, temporal
+								dynamics,
+								perceptual clarity, and intelligibility. The application angle evaluation will
+								comprehensively analyze each codec's ability to preserve crucial audio information,
+								encompassing content, speaker timbre, emotion, and general audio characteristics. We
+								hope this challenge can inspire innovative research in neural codec development.
+								With
+								this proposal, we aim to promote innovation in neural audio codec fields and
+								advancing
+								the research frontier.
+							</p>
+						</section>
+					</article>
+				</div>
+			</section>
+			<section id="timeline">
+				<div class="container">
+					<!-- Content -->
+					<article class="box post">
+						<header>
+							<h2>Timeline (TBD)</h2>
+						</header>
+						<!-- Create a timeline template -->
+						<div class="ritz grid-container" dir="ltr">
+							<section style="line-height: 1.75em; font-size: 22px">
+								<li>Now: data available for public-set (Hidden-set will be hidden throughout the
+									challenge)</li>
+								<li>Rule announcement: 2024-04-15</li>
+								<li>Submission start: 2024-04-15</li>
+								<li>Submission deadline: 2024-07</li>
+								<li>Results announcement and hosting challenge: 2024-12</li>
+							</section>
+			</section>
+			<section id="committee">
+				<div class="container">
+					<!-- Content -->
+					<article class="box post">
+						<header>
+							<h2>Committee</h2>
+						</header>
+						<div class="ritz grid-container" dir="ltr">
+							<h3>Organizers</h3>
+							<section style="line-height: 1.75em; font-size: 22px">
+								<li>
+									Hung-yi Lee (National Taiwan University) <a
+										href="https://speech.ee.ntu.edu.tw/~hylee/index.php">website</a> </li>
+								<li>Haibin Wu (National Taiwan University, NTU) <a
+										href="https://alexander-h-liu.github.io/">website</a> </li>
+								<li>Kai-Wei Chang (National Taiwan University, NTU) <a
+										href="https://scholar.google.com.tw/citations?user=hE_Oq8cAAAAJ">website</a>
+								</li>
+								<li>Alexander H. Liu (Massachusetts Institute of Technology, MIT) <a
+										href="https://alexander-h-liu.github.io/">website</a>
+								</li>
+								<li>Songxiang Liu (miHoYo) <a href="https://liusongxiang.github.io/">website</a> </li>
+							</section>
+							<br>
+							<h3>Advisors</h3>
+							<section style="line-height: 1.75em; font-size: 22px">
+								<li>Shang-Wen Li (Meta) <a href="https://swdanielli.github.io/index.html">website</a>
+							</section>
+							</li>
+			</section>
+			<section>
+				<div class="container">
+					<!-- Content -->
+					<article class="box post">
+						<header>
+							<h2>References</h2>
+						</header>
+						<section>
+							<p>[1] Wu, Haibin, et al. "Towards audio language modeling-an overview." arXiv preprint
+								arXiv:2402.13236 (2024).<br>
+								[2] Wu, Haibin, et al. "Codec-SUPERB: An In-Depth Analysis of Sound Codec Models." arXiv
+								preprint arXiv:2402.13071 (2024).<br>
+								[3] Neil Zeghidour et al., “Soundstream: An end-to-end neural audio codec,” IEEE/ACM
+								Transactions on Audio, Speech, and Language Processing, vol. 30, pp. 495–507, 2021.<br>
+								[4] Zalan Borsos et al., “Audiolm: a language modeling approach to audio generation,”
+								IEEE/ACM Transactions on Audio, Speech, and Language Processing, 2023.<br>
+								[5] Felix Kreuk et al., “Audiogen: Textually guided audio generation,” arXiv preprint
+								arXiv:2209.15352, 2022.<br>
+								[6] Défossez, Alexandre, et al. "High fidelity neural audio compression." arXiv preprint
+								arXiv:2210.13438 (2022).<br>
+								[7] Chengyi Wang et al., “Neural codec language models are zero-shot text to speech
+								synthesizers,” arXiv preprint arXiv:2301.02111, 2023.<br>
+								[8] Andrea Agostinelli et al., “Musiclm: Generating music from text,” arXiv preprint
+								arXiv:2301.11325, 2023.<br>
+								[9] Ziqiang Zhang et al., “Speak foreign languages with your own voice: Cross-lingual
+								neural
+								codec language modeling,” arXiv preprint arXiv:2303.03926, 2023.<br>
+								[10] Jenrungrot, Teerapat, et al. "LMCodec: A Low Bitrate Speech Codec with Causal
+								Transformer Models." ICASSP 2023-2023 IEEE International Conference on Acoustics, Speech
+								and
+								Signal Processing (ICASSP). IEEE, 2023.<br>
+								[11] Tianrui Wang et al., “Viola: Unified codec language models for speech recognition,
+								synthesis, and translation,” arXiv preprint arXiv:2305.16107, 2023.<br>
+								[12] Jiang, Xue, et al. "Latent-Domain Predictive Neural Speech Coding." IEEE/ACM
+								Transactions on Audio, Speech, and Language Processing (2023).<br>
+								[13] Yi-Chiao Wu et al., “Audiodec: An open-source streaming high- fidelity neural audio
+								codec,” in ICASSP 2023-2023 IEEE International Conference on Acoustics, Speech and
+								Signal
+								Processing (ICASSP). IEEE, 2023, pp. 1–5.<br>
+								[14] Dongchao Yang et al., “Hifi-codec: Group-residual vector quantization for high
+								fidelity
+								audio codec,” arXiv preprint arXiv:2305.02765, 2023.<br>
+								[15] Borsos, Zalán, et al. "SoundStorm: Efficient Parallel Audio Generation." arXiv
+								preprint
+								arXiv:2305.09636 (2023).<br>
+								[16] Rithesh Kumar, Prem Seetharaman, Alejandro Luebs, Ishaan Kumar, and Kundan Kumar,
+								“High-fidelity audio compression with improved rvqgan,” arXiv preprint arXiv:2306.06546,
+								2023.<br>
+								[17] Jade Copet et al., “Simple and controllable music generation,” arXiv preprint
+								arXiv:2306.05284, 2023.<br>
+								[18] Paul K Rubenstein et al., “Audiopalm: A large language model that can speak and
+								listen,” arXiv preprint arXiv:2306.12925, 2023.<br>
+								[19] Xin Zhang, Dong Zhang, Shimin Li, Yaqian Zhou, and Xipeng Qiu, “Speechtokenizer:
+								Unified speech tokenizer for speech large language models,” arXiv preprint
+								arXiv:2308.16692,
+								2023.<br>
+								[20] Xiaofei Wang et al., “Speechx: Neural codec language model as a versatile speech
+								transformer,” arXiv preprint arXiv:2308.06873, 2023.<br>
+								[21] Ratnarajah, Anton, et al. "M3-AUDIODEC: Multi-channel multi-speaker multi-spatial
+								audio
+								codec." arXiv preprint arXiv:2309.07416 (2023).<br>
+								[22] Xu, Zhongweiyang, et al. "SpatialCodec: Neural Spatial Speech Coding." arXiv
+								preprint
+								arXiv:2309.07432 (2023).<br>
+								[23] Zhihao Du, Shiliang Zhang, Kai Hu, and Siqi Zheng, “Funcodec: A fundamental,
+								reproducible and integrable open-source toolkit for neural speech codec,” arXiv preprint
+								arXiv:2309.07405, 2023.<br>
+								[24] Qian Chen et al., “Lauragpt: Listen, attend, understand, and regenerate audio with
+								gpt,” arXiv preprint arXiv:2310.04673, 2023.<br>
+								[25] Dongchao Yang et al., “Uniaudio: An audio foundation model toward universal audio
+								generation,” arXiv preprint arXiv:2310.00704, 2023.<br>
+								[26] Ji, Shengpeng, et al. "Language-Codec: Reducing the Gaps Between Discrete Codec
+								Representation and Speech Language Models." arXiv preprint arXiv:2402.12208 (2024).</p>
+						</section>
+
+
+						<div class="ritz grid-container" dir="ltr">
+
+			</section>
+			<section id="contact">
+				<div class="container">
+					<!-- Content -->
+					<article class="box post">
+						<header>
+							<h2>Contact</h2>
+						</header>
+						<section style="line-height: 1.75em; font-size: 22px">
+							codecsuperb@gmail.com
+						</section>
+			</section>
+	</div>
+	</article>
+	</div>
+
+	</section>
+
+	<!-- Footer -->
+	<section id="footer">
+		<div class="container"></div>
+	</section>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>
